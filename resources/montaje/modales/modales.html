@@ -1,0 +1,120 @@
+<button onclick="modal_crear_proceso.showModal()">
+	Abrir
+</button>
+
+<dialog id="modal_crear_proceso" class="modal">
+
+	<div style="backdrop-filter: blur(5px);"
+		class="modal-box shadow shadow-xl p-4 border border-base-content/10 bg-base-100/90 lg:max-h-[80vh] max-h-[500px] max-w-lg rounded-xl border border-base-content/5 z-10">
+
+		<form action="" id="crear_proceso" class="lg:space-y-5 space-y-4" method="post">
+			@csrf
+			<section>
+				<h3 class="lg:text-normal font-medium">Crear proceso</h3>
+			</section>
+
+			<!-- ALERTA -->
+			<div
+				class="alerta rounded-md bg-error/40 p-4 transition-all duration-500 transform opacity-0 pointer-events-none hidden">
+				<div class="flex">
+					<div class="shrink-0">
+						<svg class="size-5 text-red-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+							<path fill-rule="evenodd"
+								d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM8.28 7.22a.75.75 0 0 0-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 1 0 1.06 1.06L10 11.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L11.06 10l1.72-1.72a.75.75 0 0 0-1.06-1.06L10 8.94 8.28 7.22Z"
+								clip-rule="evenodd" />
+						</svg>
+					</div>
+					<div class="ml-3">
+						<h3 class="text-sm font-medium error_mensaje"></h3>
+						<div class="mt-2 text-sm">
+							<ul role="list" class="list-disc space-y-1 pl-5 error_lista"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="grid lg:grid-cols-[auto_1fr] grid-cols-1 gap-2 gap-x-5">
+				<!-- Campo -->
+				<div class="lg:col-span-auto col-span-1">
+					<filedset>
+						<div class="img-group">
+							<legend class="fieldset-legend text-xs">Icono</legend>
+
+							<label for="icono">
+								<img src="#"
+									class="preview size-15 p-0 hover:p-0.5 duration-200 rounded-2xl object-cover input cursor-pointer">
+							</label>
+							<input type="file" name="icono" id="icono" accept="image/*" class="hidden">
+						</div>
+					</filedset>
+				</div>
+
+				<div class="lg:col-span-1 col-span-1 gap-4 grid">
+					<!-- Campo -->
+					<fieldset class="fieldset lg:col-span-2 col-span-2">
+						<legend class="fieldset-legend">Título</legend>
+						<input type="text" name="titulo" class="input-md w-full" />
+					</fieldset>
+
+					<!-- Campo -->
+					<fieldset class="fieldset lg:col-span-1 col-span-2">
+						<legend class="fieldset-legend">Estado</legend>
+						<!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+						<el-select id="select" name="selected" value="4" class="block">
+							<button type="button"
+								class="grid w-full cursor-default grid-cols-1 text-left outline-1 -outline-offset-1 outline-gray-300 -outline-offset-2 outline-indigo-600 outline-white/10 outline-indigo-500">
+								<el-selectedcontent class="col-start-1 row-start-1 truncate pr-6">Selecciona
+									uno</el-selectedcontent>
+								<svg viewBox="0 0 16 16" fill="currentColor" data-slot="icon" aria-hidden="true"
+									class="col-start-1 row-start-1 size-5 self-center justify-self-end sm:size-4">
+									<path
+										d="M5.22 10.22a.75.75 0 0 1 1.06 0L8 11.94l1.72-1.72a.75.75 0 1 1 1.06 1.06l-2.25 2.25a.75.75 0 0 1-1.06 0l-2.25-2.25a.75.75 0 0 1 0-1.06ZM10.78 5.78a.75.75 0 0 1-1.06 0L8 4.06 6.28 5.78a.75.75 0 0 1-1.06-1.06l2.25-2.25a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06Z"
+										clip-rule="evenodd" fill-rule="evenodd" />
+								</svg>
+							</button>
+
+							<el-options anchor="bottom start" popover
+								class="max-h-60 w-(--button-width) overflow-auto rounded-md py-1 shadow-lg outline-1 outline-black/5 [--anchor-gap:--spacing(1)] data-leave:transition data-leave:transition-discrete data-leave:duration-100 data-leave:ease-in data-closed:data-leave:opacity-0 sm:text-sm hover:bg-base-300 cursor-pointer shadow-none -outline-offset-1 outline-white/10 ring ring-base-content/10">
+								<el-option value="1"
+									class="group/option relative block cursor-default py-2 pr-9 pl-3 select-none">
+									<span class="block truncate font-normal group-aria-selected/option:font-semibold">Wade
+										Cooper</span>
+									<span
+										class="absolute inset-y-0 right-0 flex items-center pr-4 text-indigo-600 group-not-aria-selected/option:hidden group-/option in-[el-selectedcontent]:hidden text-indigo-400">
+										<svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+											class="size-5">
+											<path
+												d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+												clip-rule="evenodd" fill-rule="evenodd" />
+										</svg>
+									</span>
+								</el-option>
+							</el-options>
+						</el-select>
+
+					</fieldset>
+
+					<!-- Campo -->
+					<fieldset class="fieldset lg:col-span-1 col-span-2">
+						<legend class="fieldset-legend">Fecha entrega</legend>
+						<input type="date" name="fecha_finalizacion" class="input-md w-full" />
+					</fieldset>
+
+					<!-- Campo -->
+					<fieldset class="fieldset lg:col-span-2 col-span-2">
+						<legend class="fieldset-legend">Información</legend>
+						<textarea class="w-full" name="informacion" id="informacion" rows="5"></textarea>
+					</fieldset>
+				</div>
+			</section>
+
+			<div class="text-end">
+				<button type="submit" class="btn btn-md btn-primary">Enviar</button>
+			</div>
+		</form>
+	</div>
+
+	<form method="dialog" class="modal-backdrop z-9">
+		<button>close</button>
+	</form>
+</dialog>
