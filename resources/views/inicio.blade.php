@@ -32,8 +32,8 @@
                         Málaga</small>
                      </p>
                      <div class="mt-10 flex items-center justify-center gap-x-6">
-                        <a href="#" class="btn btn-success rounded-full text-sm/6 font-semibold">
-                           Ver vídeo
+                        <a href="/invitados" class="btn btn-success rounded-full text-sm/6 font-semibold">
+                           Invitados
                         </a>
                         <a href="{{ route('web_checkout') }}"
                            class="btn btn-primary rounded-full text-sm/6 font-semibold">Comprar
