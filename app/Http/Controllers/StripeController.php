@@ -10,6 +10,8 @@ use App\Models\Entrada;
 use Stripe\Stripe;
 use Stripe\Checkout\Session as CheckoutSession;
 use Stripe\Webhook;
+use App\Mail\PagoConfirmado;
+use Illuminate\Support\Facades\Mail;
 
 class StripeController extends Controller
 {
@@ -106,7 +108,7 @@ class StripeController extends Controller
                 'price'    => $priceId,
                 'quantity' => 1,
             ]],
-            'metadata'       => ['entrada_uuid' => $entrada->uuid],
+            'metadata'       => ['entrada_uuid' => $entrada->uuid, 'email' => $data['email']],
             'success_url'    => route('checkout_success', ['id' => $entrada->uuid]),
             'cancel_url'     => route('checkout_cancel')  . '?r=' . $entrada->uuid,
             'locale'         => 'es',
@@ -139,6 +141,7 @@ class StripeController extends Controller
                     /** @var \Stripe\Checkout\Session $session */
                     $session = $event->data->object;
                     $uuid = $session->metadata->entrada_uuid ?? null;
+                    $email_envio = $session->metadata->envio ?? null;
 
                     if ($uuid) {
                         $entrada = Entrada::where('uuid', $uuid)->first();
@@ -152,6 +155,9 @@ class StripeController extends Controller
                                 $entrada->identificacion = strtoupper(Str::random(7));
                             }
                             $entrada->save();
+
+                            // Envía el email
+                            Mail::to($entrada->email)->send(new PagoConfirmado($entrada));
                         }
                     }
                     break;

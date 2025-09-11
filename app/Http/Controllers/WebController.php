@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Entrada;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
@@ -10,41 +11,47 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 class WebController extends Controller
 {
 
-	public function inicio() //OK
-	{
-		return view('inicio');
-	}
+    public function inicio() //OK
+    {
+        return view('inicio');
+    }
 
     public function invitados() //OK
-	{
-		return view('invitados');
-	}
+    {
+        return view('invitados');
+    }
 
-	public function checkout() //OK
-	{
-		return view('checkout');
-	}
+    public function checkout() //OK
+    {
+        return view('checkout');
+    }
 
     //
 
-
     public function confirmado($id) //OK
-	{
-        $entrada = Entrada::where('uuid',$id)->first();
-        $qrSvg = QrCode::size(200)->margin(3)->generate($entrada->identificacion);
+    {
+        $entrada = Entrada::where('uuid', $id)->first();
+        $qrSvg = QrCode::size(200)
+            ->size(150)
+            ->margin(1)
+            ->style('round')
+            ->eye('circle')
+            ->gradient(45, 85, 255, 0, 200, 150, 'diagonal')
+            ->errorCorrection('H')
+            ->generate($entrada->identificacion);
 
-		return view('confirmado', compact('entrada','qrSvg'));
-	}
+        return view('confirmado', compact('entrada', 'qrSvg'));
+    }
 
 
     public function cancelado() //OK
-	{
-		return view('cancelado');
-	}
+    {
+        return view('cancelado');
+    }
 
 
-	// 
-	public function api_checkout(Request $request)
+    // 
+    public function api_checkout(Request $request)
     {
         // Validación
         $validator = Validator::make(
@@ -93,14 +100,12 @@ class WebController extends Controller
         // Normaliza booleans (por si los necesitas ya tipados)
         $data['pastor']         = $request->boolean('pastor');
         $data['jovenes_lider']  = $request->boolean('jovenes_lider');
-        $data['camiseta_entrada']= $request->boolean('camiseta_entrada');
-        $data['check_proteccion']= $request->boolean('check_proteccion');
+        $data['camiseta_entrada'] = $request->boolean('camiseta_entrada');
+        $data['check_proteccion'] = $request->boolean('check_proteccion');
 
         return response()->json([
             'message' => 'OK',
             'data'    => $data,
         ]);
     }
-
-
 }
