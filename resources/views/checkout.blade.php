@@ -101,7 +101,7 @@
                            <fieldset>
                               <div class="w-full">
                                  <label for="ciudad" class="block text-sm/6 font-medium">
-                                    ¿De dónde vienes?*
+                                    ¿De dónde vienes?**
                                  </label>
                                  <div class="mt-2">
                                     <select class="select w-full" name="ciudad" id="ciudad"></select>
