@@ -10,7 +10,7 @@
 @component('mail::message')
    # 🎟️ ¡Tu entrada está confirmada!
 
-   Hola {{ $entrada->nombre ?? '!' }},
+   Hola **{{ ucfirst($entrada->nombre) ?? '!' }}**,
    hemos recibido tu pago correctamente. A continuación tienes **todos los datos de tu entrada** y el botón para acceder a ella cuando quieras.
 
    @component('mail::panel')
