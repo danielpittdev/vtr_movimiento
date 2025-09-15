@@ -63,7 +63,7 @@ class StripeController extends Controller
 
         // setear conteo de entradas
         $count_entradas = Entrada::get();
-        if (count($count_entradas) > 1400) {
+        if (count($count_entradas) > 2400) {
             return response()->json([
                 'data' => [
                     'message' => 'No hay entradas disponibles',

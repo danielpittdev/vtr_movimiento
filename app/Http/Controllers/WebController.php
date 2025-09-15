@@ -13,7 +13,8 @@ class WebController extends Controller
 
     public function inicio() //OK
     {
-        return view('inicio');
+        $entradas = Entrada::get();
+        return view('inicio', compact('entradas'));
     }
 
     public function invitados() //OK
@@ -23,7 +24,8 @@ class WebController extends Controller
 
     public function checkout() //OK
     {
-        return view('checkout');
+        $entradas = Entrada::get();
+        return view('checkout', compact('entradas'));
     }
 
     //

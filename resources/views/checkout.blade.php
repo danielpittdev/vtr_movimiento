@@ -374,12 +374,17 @@
                      reembolsables una vez adquiridas. Respete los turnos de entrada y tenga a mano su código
                      QR para acceder al evento.</p>
 
+                  <ul class="text-base-content/50 text-sm">
+                     <li>APERTURA DE PUERTAS: 10:30h.</li>
+                     <li>EVENTO: 11:00h.</li>
+                  </ul>
+
                   <p class="text-base-content/50 text-xs/4">
-                     El evento empezará a las 11:00h y habrá una pausa para poder almorzar, teniendo una estimación de
-                     finalización a las 19:30h. Puedes abandonar el recinto cuando quieras si tienes que irte antes.
+                     Destacamos la importancia de llegar a tiempo al evento para una correcta organización de las personas.
                   </p>
 
                   <div class="divider"></div>
+
                   <h6>Recogida de camisetas</h6>
                   <p class="text-base-content/50 text-xs/4">
                      Para recoger tu camiseta podrás dirigirte a uno de los puntos de recogida de camisetas, debes de

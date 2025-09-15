@@ -13,6 +13,8 @@
    Hola **{{ ucfirst($entrada->nombre) ?? '!' }}**,
    hemos recibido tu pago correctamente. A continuación tienes **todos los datos de tu entrada** y el botón para acceder a ella cuando quieras.
 
+   ** ATENCIÓN ** La apertura de puertas se realizará a las 10:30h, por lo que te aconsejamos que estés puntualmente a las 10:00h para una correcta organización.
+
    @component('mail::panel')
       **ID de la entrada:** {{ $idEntrada }}
       **Importe:** €{{ $importe }}
