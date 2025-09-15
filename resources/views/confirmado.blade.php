@@ -10,7 +10,9 @@
                class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75">
             </div>
 
-            <video src="/media/videos/back2.mp4" loop autoplay muted class="absolute scale-[4] top-0 w-full h-full"></video>
+            <video playsinline
+               webkit-playsinline x5-playsinline controlsList="nofullscreen noremoteplayback" disablepictureinpicture
+               controls src="/media/videos/back2.mp4" loop autoplay muted class="absolute scale-[4] top-0 w-full h-full"></video>
          </div>
          <div class="bg-base-100 shadow-xl rounded-3xl p-10 text-center max-w-md w-full space-y-6">
             <!-- Check animado -->
