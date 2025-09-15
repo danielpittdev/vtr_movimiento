@@ -375,8 +375,8 @@
                      QR para acceder al evento.</p>
 
                   <ul class="text-base-content/50 text-sm">
+                     <li>INSCRIPCIONES: 10:00h.</li>
                      <li>APERTURA DE PUERTAS: 10:30h.</li>
-                     <li>EVENTO: 11:00h.</li>
                   </ul>
 
                   <p class="text-base-content/50 text-xs/4">

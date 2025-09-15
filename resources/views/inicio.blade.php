@@ -28,7 +28,7 @@
                         con
                         nuestra
                         generación </h2>
-                     <small class="md:text-xl text-lg">15 de noviembre - Palacio de Exposiciones y Congresos de Estepona,
+                     <small class="md:text-xl text-lg">15 de noviembre - 10:00h - Palacio de Exposiciones y Congresos de Estepona,
                         Málaga</small>
                      </p>
                      <div class="mt-10 flex items-center justify-center gap-x-6">
