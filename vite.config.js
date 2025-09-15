@@ -16,18 +16,18 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
-    server: {
-        host: "127.0.0.1",
-        port: 5180,
-        strictPort: true,
-        https: {
-            key: fs.readFileSync("/Users/danielpitt16/rezerva.local+5-key.pem"),
-            cert: fs.readFileSync("/Users/danielpitt16/rezerva.local+5.pem"),
-        },
-        hmr: {
-            host: "vtr.local",
-            protocol: "wss",
-            port: 5180,
-        },
-    },
+    // server: {
+    //     host: "127.0.0.1",
+    //     port: 5180,
+    //     strictPort: true,
+    //     https: {
+    //         key: fs.readFileSync("/Users/danielpitt16/rezerva.local+5-key.pem"),
+    //         cert: fs.readFileSync("/Users/danielpitt16/rezerva.local+5.pem"),
+    //     },
+    //     hmr: {
+    //         host: "vtr.local",
+    //         protocol: "wss",
+    //         port: 5180,
+    //     },
+    // },
 })
