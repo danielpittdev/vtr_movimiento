@@ -20,8 +20,7 @@
          <a href="{{ route('invitados') }}" class="text-sm/6 font-semibold">Invitados</a>
       </el-popover-group>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-         <a href="{{ route('web_checkout') }}" class="btn btn-primary rounded-full text-sm/6 font-semibold">Comprar
-            entradas</a>
+         <a href="{{ route('web_checkout') }}" class="btn btn-primary rounded-full text-sm/6 font-semibold">Haz una donación</a>
       </div>
    </nav>
    <el-dialog>
@@ -50,8 +49,7 @@
                      </div>
                      <div class="py-6">
                         <a href="{{ route('web_checkout') }}"
-                           class="btn btn-primary rounded-full text-sm/6 font-semibold">Comprar
-                           entradas</a>
+                           class="btn btn-primary rounded-full text-sm/6 font-semibold">Haz un donativo</a>
                      </div>
                   </div>
                </div>

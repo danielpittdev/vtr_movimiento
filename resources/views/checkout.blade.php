@@ -348,14 +348,14 @@
                </div>
 
                <div class="mt-5 flex items-center justify-start gap-x-6">
-                  <button type="submit" class="md:w-auto w-full btn btn-primary rounded-lg">Comprar entradas</button>
+                  <button type="submit" class="md:w-auto w-full btn btn-primary rounded-lg">Hacer donativo</button>
                </div>
             </form>
 
             <div class="caja bg-yellow2-500 h-full flex-col flex items-center justify-start p-1 space-y-6">
                <div class="md:hidden block relative md:text-start text-start w-full mt-auto">
                   <div class="font-light text-md">
-                     Precio de entrada
+                     Donación:
                   </div>
                   <div class="price_total font-medium text-xl">
                      12,00€
