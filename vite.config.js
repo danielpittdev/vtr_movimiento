@@ -16,18 +16,4 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
-    server: {
-        host: "127.0.0.1",
-        port: 5180,
-        strictPort: true,
-        https: {
-            key: fs.readFileSync("./vitalic.local-key.pem"),
-            cert: fs.readFileSync("./vitalic.local.pem"),
-        },
-        hmr: {
-            host: "vitalic.local",
-            protocol: "wss",
-            port: 5180,
-        },
-    },
 })
