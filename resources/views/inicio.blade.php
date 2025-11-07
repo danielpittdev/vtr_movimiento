@@ -36,7 +36,7 @@
                            Invitados
                         </a>
                         <a href="{{ route('web_checkout') }}"
-                           class="btn btn-primary rounded-full text-sm/6 font-semibold">Donativo <span aria-hidden="true">→</span></a>
+                           class="btn btn-primary rounded-full text-sm/6 font-semibold">Reserva tu plaza <span aria-hidden="true">→</span></a>
                      </div>
                   </div>
                   <div class="mt-16 flow-root sm:mt-24 max-w-3xl mx-auto">
