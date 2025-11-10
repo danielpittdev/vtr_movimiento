@@ -163,17 +163,22 @@ class StripeController extends Controller
                     break;
                 }
 
-            case 'checkout.session.expired':
+            case 'checkout.session.expired': {
+                    $obj = $event->data->object;
+                    $uuid = $obj->metadata->entrada_uuid ?? null;
+                    if ($uuid) {
+                        $entrada = Entrada::where('uuid', $uuid)->delete();
+                    }
+                    break;
+                }
             case 'payment_intent.payment_failed': {
                     // Marca como fallido solo si seguía pendiente
                     $obj = $event->data->object;
                     $uuid = $obj->metadata->entrada_uuid ?? null;
                     if ($uuid) {
                         $entrada = Entrada::where('uuid', $uuid)->first();
-                        if ($entrada && $entrada->estado === 'pending') {
-                            $entrada->estado = 'failed';
-                            $entrada->save();
-                        }
+                        $entrada->estado = 'failed';
+                        $entrada->save();
                     }
                     break;
                 }
