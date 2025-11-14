@@ -28,6 +28,11 @@ class WebController extends Controller
         return view('checkout', compact('entradas'));
     }
 
+    public function entrada() //OK
+    {
+        return view('entrada');
+    }
+
     //
 
     public function confirmado($id) //OK
