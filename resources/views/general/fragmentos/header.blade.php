@@ -19,8 +19,9 @@
       <el-popover-group class="hidden lg:flex lg:gap-x-12">
          <a href="{{ route('invitados') }}" class="text-sm/6 font-semibold">Invitados</a>
       </el-popover-group>
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-2">
          <a href="{{ route('web_checkout') }}" class="btn btn-primary rounded-full text-sm/6 font-semibold">Reserva tu plaza</a>
+         <a href="{{ route('web_entrada') }}" class="btn btn-success rounded-full text-sm/6 font-semibold">Comprobar entrada</a>
       </div>
    </nav>
    <el-dialog>
@@ -50,6 +51,9 @@
                      <div class="py-6">
                         <a href="{{ route('web_checkout') }}"
                            class="btn btn-primary rounded-full text-sm/6 font-semibold">Reserva tu plaza</a>
+
+                        <a href="{{ route('web_entrada') }}" class="btn btn-success rounded-full text-sm/6 font-semibold">Comprobar entrada</a>
+
                      </div>
                   </div>
                </div>
