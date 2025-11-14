@@ -4,7 +4,7 @@
    $fechaEvento = $entrada->fecha_evento_formateada ?? ($entrada->fecha_evento ?? '15 de noviembre · 11:00 h');
    $lugar = $entrada->lugar ?? 'Palacio de Congresos de Estepona (Málaga)';
    $idEntrada = $entrada->identificacion ?? strtoupper(Str::random(7));
-   $urlEntrada = route('checkout_success', ['id' => $entrada->uuid]);
+   $urlEntrada = 'https://vtr-email-tracker-main-4zqfng.laravel.cloud/entrada/' . $entrada->uuid;
 @endphp
 
 @component('mail::message')
@@ -33,7 +33,7 @@
    @endisset
 
    @component('mail::button', ['url' => $urlEntrada])
-      Ver mi entrada
+      Ir a mi entrada
    @endcomponent
 
    {{-- Bloque QR opcional (muestra si existe) --}}

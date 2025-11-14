@@ -40,7 +40,7 @@ class WebController extends Controller
             ->eye('circle')
             ->gradient(45, 85, 255, 0, 200, 150, 'diagonal')
             ->errorCorrection('H')
-            ->generate($entrada->identificacion);
+            ->generate($entrada->uuid);
 
         return view('confirmado', compact('entrada', 'qrSvg'));
     }
