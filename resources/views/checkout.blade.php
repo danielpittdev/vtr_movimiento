@@ -1,7 +1,7 @@
 @extends('general.html.checkout')
 
 @section('contenido')
-   @if (Carbon\Carbon::now() < Carbon\Carbon::parse('2025/11/15 09:00:00'))
+   @if (Carbon\Carbon::now() < Carbon\Carbon::parse('2025/11/15 10:30:00'))
       <div class="flex items-center justify-center md:p-5 h-[100vh]">
          <div aria-hidden="true" class="fixed inset-x-0 -z-10 transform-gpu blur-3xl h-full scale-[2]">
             <div
@@ -415,15 +415,23 @@
             </div>
             <h1 class="font-medium text-2xl">¿Lo dejaste para lo último? :(</h1>
 
-            <p>
+            {{-- <p>
                La venta de entradas ha finalizado, pero no te preocupes todavía puedes asistir al evento en el punto de venta que tenemos allí. Aún tienes tiempo de poder venir a disfrutar con nosotros. Anímate!!!
-            </p>
+            </p> --}}
 
+            <div class="caja">
+               <p>
+                  El momento ha llegado, después de tanto esperando este día. El arrebatamiento ha llegado, te quedaste sin entrada a "Venga Tu Reino". No te preocupes que puedes comprarlas presencialmente desde las 10:30h.
+               </p>
+               <small>By: Santi Niño</small>
+            </div>
 
-            <small>
-               “Velad, pues, porque no sabéis el día ni la hora en que el Hijo del Hombre ha de venir.” <br>
-               (Mateo 25:13)
-            </small>
+            <div class="caja">
+               <small>
+                  “Velad, pues, porque no sabéis el día ni la hora en que el Hijo del Hombre ha de venir.” <br>
+                  (Mateo 25:13)
+               </small>
+            </div>
          </div>
       </div>
    @endif
