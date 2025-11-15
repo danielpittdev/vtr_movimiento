@@ -1,7 +1,7 @@
 @extends('general.html.checkout')
 
 @section('contenido')
-   @if (Carbon\Carbon::now() < Carbon\Carbon::parse('2025/11/15 10:30:00'))
+   @if (Carbon\Carbon::now() < Carbon\Carbon::parse('2025/11/15 20:30:00'))
       <div class="flex items-center justify-center md:p-5 h-[100vh]">
          <div aria-hidden="true" class="fixed inset-x-0 -z-10 transform-gpu blur-3xl h-full scale-[2]">
             <div
