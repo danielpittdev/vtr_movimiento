@@ -13,19 +13,12 @@ class WebController extends Controller
 
     public function inicio() //OK
     {
-        $entradas = Entrada::get();
-        return view('inicio', compact('entradas'));
+        return view('inicio');
     }
 
     public function invitados() //OK
     {
         return view('invitados');
-    }
-
-    public function checkout() //OK
-    {
-        $entradas = Entrada::get();
-        return view('checkout', compact('entradas'));
     }
 
     public function entrada() //OK

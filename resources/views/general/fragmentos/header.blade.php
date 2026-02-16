@@ -1,4 +1,4 @@
-<header style="backdrop-filter: blur(5px)" class="bg-base-300/25 w-full fixed top-0 left-0 z-100">
+<header style="backdrop-filter: blur(0px)" class="w-full fixed top-0 left-0 z-100">
    <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
       <div class="flex lg:flex-1">
          <a href="/" class="-m-1.5 p-1.5">
@@ -17,11 +17,10 @@
          </button>
       </div>
       <el-popover-group class="hidden lg:flex lg:gap-x-12">
-         <a href="{{ route('invitados') }}" class="text-sm/6 font-semibold">Invitados</a>
+         <a href="{{ route('invitados') }}" class="hidden text-sm/6 font-semibold">Invitados</a>
       </el-popover-group>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-2">
-         <a href="{{ route('web_checkout') }}" class="btn btn-primary rounded-full text-sm/6 font-semibold">Reserva tu plaza</a>
-         <a href="{{ route('web_entrada') }}" class="btn btn-success rounded-full text-sm/6 font-semibold">Comprobar entrada</a>
+         <a href="https://rezerva.es/e/dad32e5c-15ae-4b13-885b-75157c07f7e9" class="btn btn-primary rounded-full text-sm/6 font-semibold">Reserva tu plaza</a>
       </div>
    </nav>
    <el-dialog>
@@ -32,7 +31,7 @@
                <div class="flex items-center justify-between">
                   <a href="/" class="-m-1.5 p-1.5">
                      <span class="sr-only">VTR - Venga Tu Reino</span>
-                     <img src="{{ asset('/media/logo.png') }}" alt="" class="h-8 w-auto" />
+                     <img src="{{ asset('/media/logo.png') }}" alt="" class="h-12 w-auto" />
                   </a>
                   <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5">
                      <span class="sr-only">Close menu</span>
@@ -44,16 +43,12 @@
                </div>
                <div class="mt-6 flow-root">
                   <div class="-my-6 divide-y divide-gray-500/10">
-                     <div class="space-y-2 py-6">
+                     <div class="hidden space-y-2 py-6">
                         <a href="{{ route('invitados') }}"
                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50">Invitados</a>
                      </div>
                      <div class="py-6">
-                        <a href="{{ route('web_checkout') }}"
-                           class="btn btn-primary rounded-full text-sm/6 font-semibold">Reserva tu plaza</a>
-
-                        <a href="{{ route('web_entrada') }}" class="btn btn-success rounded-full text-sm/6 font-semibold">Comprobar entrada</a>
-
+                        <a href="https://rezerva.es/e/dad32e5c-15ae-4b13-885b-75157c07f7e9" class="btn btn-primary rounded-full text-md/6 font-semibold">Reserva tu plaza</a>
                      </div>
                   </div>
                </div>

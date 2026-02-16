@@ -6,8 +6,15 @@ window.$ = window.jQuery = $;
 import Plyr from "plyr";
 import "plyr/dist/plyr.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 document.addEventListener("DOMContentLoaded", () => {
-    const players = Plyr.setup(".js-player");
+    Plyr.setup(".js-player");
+    AOS.init({
+        duration: 800,
+        once: true,
+    });
 });
 
 import "cally";

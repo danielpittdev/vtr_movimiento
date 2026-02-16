@@ -1,117 +1,56 @@
 @extends('general.html.blank')
 
 @section('contenido')
-   <div class="bg-base-100">
-      <main class="isolate">
-         <!-- Hero section -->
-         <div class="relative pt-14">
-            <div aria-hidden="true" class="absolute top-0 -z-10 transform-gpu overflow-hidden blur-3xl w-full">
-               <div
-                  style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
-                  class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75">
-               </div>
-
-               <video src="/media/videos/back3.mp4" loop autoplay muted class="absolute scale-[4] top-0 w-full h-full"
-                  playsinline webkit-playsinline x5-playsinline controlsList="nofullscreen noremoteplayback"
-                  disablepictureinpicture></video>
-            </div>
-
-            <div class="py-24 sm:py-32 lg:pb-20">
-               <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                  <div class="mx-auto max-w-3xl text-center">
-                     <img src="/media/logo.png" class="text-center mx-auto w-50" alt="">
-                     <h1 class="text-2xl font-semibold tracking-tight text-balance sm:text-xl">
-                        Venga Tu Reino
-                     </h1>
-                     <p class="mt-8 text-lg font-medium text-pretty sm:text-xl/8">
-                     <h2 class="mb-3 font-bold md:text-3xl text-xl mb-10">Soñemos con lo que Dios quiere hacer en Andalucía
-                        con
-                        nuestra
-                        generación </h2>
-                     <small class="md:text-xl text-lg">15 de noviembre - 10:00h - Palacio de Exposiciones y Congresos de Estepona,
-                        Málaga</small>
-                     </p>
-                     <div class="mt-10 flex items-center justify-center gap-x-6">
-                        <a href="/invitados" class="btn btn-success rounded-full text-sm/6 font-semibold">
-                           Invitados
-                        </a>
-                        <a href="{{ route('web_checkout') }}"
-                           class="btn btn-primary rounded-full text-sm/6 font-semibold">Reserva tu plaza <span aria-hidden="true">→</span></a>
-                     </div>
-                  </div>
-                  <div class="mt-16 flow-root sm:mt-24 max-w-3xl mx-auto">
-                     <div
-                        class="w-full justify-center -m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-gray-900/10 ring-inset lg:-m-4 lg:rounded-2xl lg:p-4">
-                        <video width="2432" height="1442"
-                           class="js-player w-304 rounded-md bg-gray-50 shadow-xl ring-1 ring-gray-900/10" playsinline
-                           webkit-playsinline x5-playsinline controlsList="nofullscreen noremoteplayback"
-                           disablepictureinpicture controls>
-                           <source src="{{ asset('/media/videos/video.mov') }}" type="video/mp4" />
-                        </video>
-                     </div>
-                  </div>
-               </div>
-            </div>
-
-            <div aria-hidden="true"
-               class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
-               <div
-                  style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
-                  class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75">
-               </div>
-
-               <video src="/media/videos/back.mp4" loop autoplay muted class="absolute scale-[4] top-0 w-full h-full"
-                  playsinline webkit-playsinline x5-playsinline controlsList="nofullscreen noremoteplayback"
-                  disablepictureinpicture></video>
-            </div>
-         </div>
-      </main>
-
-      <!-- Footer -->
-      <footer class="relative mx-auto mt-0 max-w-7xl px-6 lg:px-8 space-y-7 pb-15">
-         <div class="capa text-center">
-            <h6>VTR Venga tu Reino - Todos los derechos reservados {{ Carbon\Carbon::now()->translatedFormat('Y') }} ©</h6>
-         </div>
-
-         <div class="capa text-center">
-            <small>Diseño Sara Orjuela - Desarrollo Daniel González</small>
-         </div>
-      </footer>
+   {{-- Fondo fijo --}}
+   <div class="fixed inset-0 z-0">
+      <img class="w-full h-full object-cover" src="/media/vtr2026/fondo_vtr.png" alt="Fondo VTR">
    </div>
-   <script>
-      document.addEventListener('DOMContentLoaded', function() {
-         const vids = document.querySelectorAll('video');
-         vids.forEach(v => {
-            v.setAttribute('playsinline', '');
-            v.setAttribute('webkit-playsinline', '');
-            v.setAttribute('x5-playsinline', '');
-            v.setAttribute('controlsList', 'nofullscreen noremoteplayback');
-            v.setAttribute('disablepictureinpicture', '');
 
-            document.addEventListener('fullscreenchange', () => {
-               if (document.fullscreenElement) {
-                  document.exitFullscreen?.();
-               }
-            });
+   {{-- Contenido principal --}}
+   <div class="relative z-10 min-h-screen flex flex-col items-center pt-24 sm:pt-28 pb-28 sm:pb-20 px-4 sm:px-6 overflow-x-hidden">
 
-            v.addEventListener('webkitbeginfullscreen', () => {
-               (document.exitFullscreen?.() || document.webkitExitFullscreen?.() || document
-                  .webkitCancelFullScreen?.());
-            });
-         });
+      {{-- Sección Hero --}}
+      <div class="w-full max-w-5xl mx-auto flex flex-col items-center gap-4 sm:gap-6 lg:gap-8 pb-20">
 
-         try {
-            if (window.Plyr && typeof Plyr === 'function') {
-               document.querySelectorAll('.js-player').forEach(el => {
-                  new Plyr(el, {
-                     fullscreen: {
-                        enabled: false
-                     },
-                     clickToPlay: true
-                  });
-               });
-            }
-         } catch (e) {}
-      });
-   </script>
+         {{-- Bloque central: Cartel de invitados con elementos decorativos --}}
+         <div class="relative w-full flex items-center justify-center">
+
+            {{-- Cartel invitados (centro) --}}
+            <div data-aos="zoom-in" data-aos-duration="1000" class="relative z-10">
+               <img class="w-full max-w-[280px] sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl drop-shadow-2xl"
+                  src="/media/vtr2026/invitados_TEMP.png" alt="Invitados">
+            </div>
+
+            {{-- Venga Tu Reino texto: lado derecho --}}
+            <div data-aos="fade-left" data-aos-duration="900" data-aos-delay="500"
+               class="hidden sm:block absolute -right-2 md:right-4 lg:right-8 top-1/2 -translate-y-1/2 z-20">
+               <img class="w-14 md:w-22 lg:w-28 opacity-70"
+                  src="/media/vtr2026/vengatureino.png" alt="Venga Tu Reino">
+            </div>
+         </div>
+
+         {{-- Fecha y lugar --}}
+         <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="mt-2 sm:mt-4">
+            <img class="w-52 sm:w-60 md:w-72 lg:w-120 drop-shadow-xl"
+               src="/media/vtr2026/fechalugar.png" alt="18 Abril - CEFC Córdoba">
+         </div>
+
+         {{-- Botón CTA --}}
+         <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="600" class="mt-2 sm:mt-4">
+            <a href="https://rezerva.es/e/dad32e5c-15ae-4b13-885b-75157c07f7e9"
+               class="btn btn-lg bg-white hover:bg-gray-50 text-black border-none rounded-full px-8 sm:px-10 text-base sm:text-lg font-bold shadow-xl shadow-white/10 transition-transform hover:scale-105">
+               Reserva tu plaza
+            </a>
+         </div>
+      </div>
+
+      {{-- Patrocinadores --}}
+      <div class="fixed bottom-0 left-0 w-full z-50 pb-10 sm:pb-10 pt-10 bg-gradient-to-t from-black/50 to-transparent pointer-events-none">
+         <div class="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 opacity-90 pointer-events-auto">
+            <img class="h-8 lg:h-12 drop-shadow-md" src="/media/vtr2026/logo_CEAA.png" alt="CEAA">
+            <img class="h-8 lg:h-12 drop-shadow-md" src="/media/vtr2026/logo_IMEDEC.png" alt="IMEDEC">
+            <img class="h-8 lg:h-12 drop-shadow-md" src="/media/vtr2026/logo_aytocordoba.png" alt="Ayto Córdoba">
+         </div>
+      </div>
+   </div>
 @endsection
