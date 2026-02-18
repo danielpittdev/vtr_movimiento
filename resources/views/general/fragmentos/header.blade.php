@@ -1,59 +1,45 @@
-<header style="backdrop-filter: blur(0px)" class="w-full fixed top-0 left-0 z-100">
-   <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-      <div class="flex lg:flex-1">
-         <a href="/" class="-m-1.5 p-1.5">
-            <span class="sr-only">VTR - Venga Tu Reino</span>
-            <img src="{{ asset('/media/logo.png') }}" alt="" class="h-12 w-auto" />
-         </a>
-      </div>
-      <div class="flex lg:hidden">
-         <button type="button" command="show-modal" commandfor="mobile-menu"
-            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
-            <span class="sr-only">Open main menu</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
-               aria-hidden="true" class="size-6">
-               <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-         </button>
-      </div>
-      <el-popover-group class="hidden lg:flex lg:gap-x-12">
-         <a href="{{ route('invitados') }}" class="hidden text-sm/6 font-semibold">Invitados</a>
-      </el-popover-group>
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-2">
-         <a href="https://rezerva.es/e/dad32e5c-15ae-4b13-885b-75157c07f7e9" class="btn btn-primary rounded-full text-sm/6 font-semibold">Reserva tu plaza</a>
-      </div>
-   </nav>
-   <el-dialog>
-      <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
-         <div tabindex="0" class="fixed inset-0 focus:outline-none">
-            <el-dialog-panel
-               class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-base-100 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-               <div class="flex items-center justify-between">
-                  <a href="/" class="-m-1.5 p-1.5">
-                     <span class="sr-only">VTR - Venga Tu Reino</span>
-                     <img src="{{ asset('/media/logo.png') }}" alt="" class="h-12 w-auto" />
-                  </a>
-                  <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5">
-                     <span class="sr-only">Close menu</span>
-                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
-                        aria-hidden="true" class="size-6">
-                        <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
-                     </svg>
-                  </button>
-               </div>
-               <div class="mt-6 flow-root">
-                  <div class="-my-6 divide-y divide-gray-500/10">
-                     <div class="hidden space-y-2 py-6">
-                        <a href="{{ route('invitados') }}"
-                           class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50">Invitados</a>
-                     </div>
-                     <div class="py-6">
-                        <a href="https://rezerva.es/e/dad32e5c-15ae-4b13-885b-75157c07f7e9" class="btn btn-primary rounded-full text-md/6 font-semibold">Reserva tu plaza</a>
-                     </div>
-                  </div>
-               </div>
-            </el-dialog-panel>
-         </div>
-      </dialog>
-   </el-dialog>
+<header class="fixed top-0 left-0 w-full z-50">
+    <div class="bg-black/40 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+
+            {{-- Logo --}}
+            <a href="/" class="text-white font-semibold tracking-widest">
+                VTR MOVIMIENTO
+            </a>
+
+            {{-- Menu --}}
+            <nav class="flex items-center space-x-10 text-white text-sm relative">
+
+                <a href="#vtr" class="hover:opacity-70">¿Qué es VTR?</a>
+
+                <a href="#equipo" class="hover:opacity-70">Equipo</a>
+
+                <a href="/conferencia" class="hover:opacity-70">Conferencias</a>
+
+                {{-- Dropdown Movimiento --}}
+                <div class="relative group">
+
+                    <button class="hover:opacity-70 flex items-center gap-1">
+                        Movimiento
+                        <span class="text-xs">▾</span>
+                    </button>
+
+                    <div class="absolute left-0 mt-4 w-48 bg-black/90 backdrop-blur-md rounded-xl opacity-0 group-hover:opacity-100 transition pointer-events-none group-hover:pointer-events-auto">
+
+                        <a href="#street" class="block px-5 py-3 hover:bg-white/10">Street</a>
+                        <a href="#lideres" class="block px-5 py-3 hover:bg-white/10">Red de líderes</a>
+                        <a href="#misiones" class="block px-5 py-3 hover:bg-white/10">Misiones</a>
+                        <a href="#podcast" class="block px-5 py-3 hover:bg-white/10">Podcast</a>
+                        <a href="#devocional" class="block px-5 py-3 hover:bg-white/10">Devocional</a>
+
+                    </div>
+
+                </div>
+
+                <a href="#contacto" class="hover:opacity-70">Contacto</a>
+
+            </nav>
+
+        </div>
+    </div>
 </header>
