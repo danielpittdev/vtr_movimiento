@@ -4,8 +4,13 @@ use App\Http\Controllers\Api\ApiBase;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WebController;
 
+Route::get('/conferencia', function () {
+    return view('conferencia');
+});
+
 // Web
 Route::get('/', [WebController::class, 'inicio'])->name('inicio');
+
 Route::get('/invitados', [WebController::class, 'invitados'])->name('invitados');
 Route::get('/checkout', [WebController::class, 'checkout'])->name('web_checkout');
 Route::get('/entrada', [WebController::class, 'entrada'])->name('web_entrada');
