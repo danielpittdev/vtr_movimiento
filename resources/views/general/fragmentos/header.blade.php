@@ -1,7 +1,7 @@
-<header class="bg-base-100">
-   <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+<header class="z-[3000] fixed top-0 left-0 w-full bg-base-100/0">
+   <nav aria-label="Global" class="z-1000 mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
       <div class="flex lg:flex-1">
-         <a href="#" class="-m-1.5 p-1.5">
+         <a href="/" class="-m-1.5 p-1.5">
             <span class="sr-only">VTR Movimiento</span>
             <img src="/media/logo.png" alt="" class="h-8 w-auto" />
          </a>
@@ -48,7 +48,7 @@
          <div tabindex="0" class="fixed inset-0 focus:outline-none">
             <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-base-100 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                <div class="flex items-center justify-between">
-                  <a href="#" class="-m-1.5 p-1.5">
+                  <a href="/" class="-m-1.5 p-1.5">
                      <span class="sr-only">VTR Movimiento</span>
                      <img src="/media/logo.png" alt="" class="h-8 w-auto" />
                   </a>
