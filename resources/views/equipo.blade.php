@@ -20,7 +20,7 @@
 <div class="min-h-screen px-6 pt-50 pb-28 text-white text-center">
 
     <h1 class="text-5xl font-bold mb-6 tracking-wide">
-        Equipo
+        
     </h1>
 <div class="text-center mb-16">
     <h1 class="text-5xl font-bold mt-20 mb-6">Equipo</h1>
