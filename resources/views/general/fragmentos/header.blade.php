@@ -66,7 +66,6 @@
                         <a href="/equipo" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-base-content hover:bg-white/5">Equipo</a>
                         <a href="/conferencia" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-base-content hover:bg-white/5">Conferencias</a>
 
-<<<<<<< HEAD
                         {{-- Dropdown Movimiento móvil --}}
                         <div class="-mx-3">
                            <button type="button" command="--toggle" commandfor="movimiento-mobile" class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-base-content hover:bg-white/5">
