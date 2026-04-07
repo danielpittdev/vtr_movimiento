@@ -21,3 +21,17 @@ Route::get('/cancelado', [WebController::class, 'cancelado'])->name('cancelado')
 
 // Com de entrada
 Route::post('/entrqury', [ApiBase::class, 'entrada_query'])->name('post_entrada_cr');
+Route::view('/contacto', 'contacto');
+Route::view('/equipo', 'equipo');
+
+Route::get('/equipo', function () {
+    return view('equipo');
+});
+
+Route::get('/contacto', function () {
+    return view('contacto');
+});
+
+Route::get('/misiones', function () {
+    return view('movimiento.misiones');
+});

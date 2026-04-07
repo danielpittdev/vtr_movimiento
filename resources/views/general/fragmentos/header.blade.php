@@ -66,6 +66,7 @@
                         <a href="#equipo" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-base-content hover:bg-white/5">Equipo</a>
                         <a href="/conferencia" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-base-content hover:bg-white/5">Conferencias</a>
 
+<<<<<<< HEAD
                         {{-- Dropdown Movimiento móvil --}}
                         <div class="-mx-3">
                            <button type="button" command="--toggle" commandfor="movimiento-mobile" class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-base-content hover:bg-white/5">
@@ -91,4 +92,35 @@
          </div>
       </dialog>
    </el-dialog>
+=======
+                <a href="/equipo" class="hover:opacity-70 transition">Equipo</a>
+                <a href="/conferencia" class="hover:opacity-70">Conferencias</a>
+
+                {{-- Dropdown Movimiento --}}
+                <div class="relative group">
+
+                    <button class="hover:opacity-70 flex items-center gap-1">
+                        Movimiento
+                        <span class="text-xs">▾</span>
+                    </button>
+
+                    <div class="absolute left-0 mt-4 w-48 bg-black/90 backdrop-blur-md rounded-xl opacity-0 group-hover:opacity-100 transition pointer-events-none group-hover:pointer-events-auto">
+
+                        <a href="#street" class="block px-5 py-3 hover:bg-white/10">Street</a>
+                        <a href="#lideres" class="block px-5 py-3 hover:bg-white/10">Red de líderes</a>
+                        <a href="#misiones" class="block px-5 py-3 hover:bg-white/10">Misiones</a>
+                        <a href="#podcast" class="block px-5 py-3 hover:bg-white/10">Podcast</a>
+                        <a href="#devocional" class="block px-5 py-3 hover:bg-white/10">Devocional</a>
+
+                    </div>
+
+                </div>
+
+                <a href="/contacto" class="hover:opacity-70 transition">Contacto</a>
+
+            </nav>
+
+        </div>
+    </div>
+>>>>>>> a60dee5 (Update equipo y contacto)
 </header>
