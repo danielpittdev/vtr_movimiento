@@ -16,7 +16,7 @@
       </div>
       <el-popover-group class="hidden lg:flex lg:gap-x-12">
          <a href="#vtr" class="text-sm/6 font-semibold text-base-content">¿Qué es VTR?</a>
-         <a href="#equipo" class="text-sm/6 font-semibold text-base-content">Equipo</a>
+         <a href="/equipo" class="text-sm/6 font-semibold text-base-content">Equipo</a>
          <a href="/conferencia" class="text-sm/6 font-semibold text-base-content">Conferencias</a>
 
          {{-- Dropdown Movimiento --}}
@@ -40,7 +40,7 @@
             </el-popover>
          </div>
 
-         <a href="#contacto" class="text-sm/6 font-semibold text-base-content">Contacto</a>
+         <a href="/contacto" class="text-sm/6 font-semibold text-base-content">Contacto</a>
       </el-popover-group>
    </nav>
    <el-dialog>
@@ -63,7 +63,7 @@
                   <div class="-my-6 divide-y divide-gray-500/10">
                      <div class="space-y-2 py-6">
                         <a href="#vtr" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-base-content hover:bg-white/5">¿Qué es VTR?</a>
-                        <a href="#equipo" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-base-content hover:bg-white/5">Equipo</a>
+                        <a href="/equipo" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-base-content hover:bg-white/5">Equipo</a>
                         <a href="/conferencia" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-base-content hover:bg-white/5">Conferencias</a>
 
 <<<<<<< HEAD
@@ -84,7 +84,7 @@
                            </el-disclosure>
                         </div>
 
-                        <a href="#contacto" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-base-content hover:bg-white/5">Contacto</a>
+                        <a href="/contacto" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-base-content hover:bg-white/5">Contacto</a>
                      </div>
                   </div>
                </div>
