@@ -53,23 +53,6 @@
                   </div>
                </div>
 
-               {{-- Video --}}
-               <div class="mx-auto mt-28 max-w-5xl">
-                  <h3 class="text-3xl font-semibold text-center mb-8">
-                     Vive la experiencia
-                  </h3>
-
-                  <div class="aspect-video rounded-3xl overflow-hidden shadow-2xl">
-                     <iframe
-                        class="w-full h-full"
-                        src="https://www.youtube.com/watch?v=Xb3aMnUn8_A"
-                        title="Guinea Ecuatorial"
-                        frameborder="0"
-                        allowfullscreen>
-                     </iframe>
-                  </div>
-               </div>
-
                {{-- CTA --}}
                <div class="text-center mt-20">
                   <h3 class="text-3xl font-semibold mb-6">
