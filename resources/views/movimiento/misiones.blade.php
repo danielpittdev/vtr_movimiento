@@ -42,7 +42,7 @@
 
                      <p class="text-base/8 opacity-80 mt-4">
                         No son solo viajes: son oportunidades para crecer espiritualmente,
-                        salir de tu zona de confort y ver a Dios obrar de manera real.
+                        salir de tu zona de confort y ver a Dios obrar de manera real. Nuestra primera mision es GUINEA ECUATORIAL, en octubre de 2026.
                      </p>
                   </div>
 
@@ -63,7 +63,7 @@
                      target="_blank"
                      rel="noopener noreferrer"
                      class="inline-block rounded-full bg-white px-10 py-4 text-lg font-semibold text-black hover:scale-105 transition">
-                     INSCRIPCIÓN
+                     INSCRIPCIÓN Y +INFO
                   </a>
                </div>
 
