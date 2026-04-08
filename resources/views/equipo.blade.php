@@ -1,3 +1,4 @@
+@extends('general.html.blank')
 @section('contenido')
    <div class="bg-base-100">
       <main class="isolate">

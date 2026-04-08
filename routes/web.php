@@ -36,4 +36,4 @@ Route::get('/vtr', function () {
 });
 Route::get('/equipo', function () {
     return view('equipo');
-    
+});
