@@ -80,7 +80,7 @@
                         <p class="text-sm/6">Asistente de Equipo</p>
                      </li>
 
-                     
+
 
                   </ul>
                </div>
@@ -95,7 +95,7 @@
          </div>
 
          <div class="capa text-center">
-            <small>Diseño Jose Lorite - Desarrollo Daniel González</small>
+            <small>Diseño Sara Orjuela - Desarrollo Daniel González</small>
          </div>
       </footer>
    </div>

@@ -31,7 +31,8 @@
                         <img src="/media/fotos/6 - Angel.png" alt=""
                            class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
                         <h3 class="mt-6 font-semibold tracking-tight mb-3">ITIEL ARROYO</h3>
-                        <p class="text-sm/6">No viene a soltar un discurso más. Viene a hablar claro, profundo y directo al corazón. Predicador internacional, autor y mentor, tiene una manera única de comunicar a Jesús en nuestro idioma cultural, sin rebajar la verdad bíblica. Su mensaje es de esos que te confrontan, te inspiran y te empujan a vivir una fe real, sin postureo y sin medias tintas.</p>
+                        <p class="text-sm/6">No viene a soltar un discurso más. Viene a hablar claro, profundo y directo al corazón. Predicador internacional, autor y mentor, tiene una manera única de comunicar a Jesús en nuestro idioma cultural, sin rebajar la verdad bíblica. Su mensaje es de esos que
+                           te confrontan, te inspiran y te empujan a vivir una fe real, sin postureo y sin medias tintas.</p>
                      </li>
 
                      <li class="rounded-2xl px-8 py-10">
@@ -45,7 +46,8 @@
                         <img src="/media/fotos/6 - Juanjo.png" alt=""
                            class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
                         <h3 class="mt-6 font-semibold tracking-tight mb-3">IVÁN MARTÍNEZ</h3>
-                        <p class="text-sm/6">Pasión, fuerza, entusiasmo y un amor genuino por Dios. Tiene esa manera de hablar que te despierta por dentro y te recuerda para qué estás aquí. Sirve como pastor en Lifeboat Church en Madrid, y no solo predica: enciende corazones y activa propósito en esta generación.</p>
+                        <p class="text-sm/6">Pasión, fuerza, entusiasmo y un amor genuino por Dios. Tiene esa manera de hablar que te despierta por dentro y te recuerda para qué estás aquí. Sirve como pastor en Lifeboat Church en Madrid, y no solo predica: enciende corazones y activa propósito en esta
+                           generación.</p>
                      </li>
 
                      <li class="rounded-2xl px-8 py-10">
@@ -67,10 +69,11 @@
                         <img src="/media/fotos/6 - Samuel.png" alt=""
                            class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
                         <h3 class="mt-6 font-semibold tracking-tight mb-3">RAWLINSON RANGEL</h3>
-                        <p class="text-sm/6">Sí, su nombre no es muy típico… pero tranquilo, cuando lo escuches no se te va a olvidar. Hace años llegó desde Brasil con una pasión clara: comunicar lo que dice la Biblia aplicado al día a día. Actualmente es pastor de la Iglesia Bautista de Sevilla, y su mensaje conecta la fe con la sociedad, retándonos a vivir el evangelio con coherencia y valentía.</p>
+                        <p class="text-sm/6">Sí, su nombre no es muy típico… pero tranquilo, cuando lo escuches no se te va a olvidar. Hace años llegó desde Brasil con una pasión clara: comunicar lo que dice la Biblia aplicado al día a día. Actualmente es pastor de la Iglesia Bautista de Sevilla, y su
+                           mensaje conecta la fe con la sociedad, retándonos a vivir el evangelio con coherencia y valentía.</p>
                      </li>
 
-                     
+
 
                   </ul>
                </div>
@@ -85,7 +88,7 @@
          </div>
 
          <div class="capa text-center">
-            <small>Diseño Jose Lorite - Desarrollo Daniel González</small>
+            <small>Diseño Sara Orjuela - Desarrollo Daniel González</small>
          </div>
       </footer>
    </div>
