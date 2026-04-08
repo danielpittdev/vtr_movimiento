@@ -25,56 +25,56 @@
                   <ul role="list"
                      class="mx-auto mt-20 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
                      <li class="rounded-2xl px-8 py-10">
-                        <img src="/media/fotos/6 - jorge.png" alt=""
+                        <img src="/media/fotos/jorge.png" alt=""
                            class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
                         <h3 class="mt-6 font-semibold tracking-tight mb-3">JORGE FELIZ</h3>
                         <p class="text-sm/6">Coordinador y fundador</p>
                      </li>
 
                      <li class="rounded-2xl px-8 py-10">
-                        <img src="/media/fotos/6 - celeste.png" alt=""
+                        <img src="/media/fotos/celeste.png" alt=""
                            class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
                         <h3 class="mt-6 font-semibold tracking-tight mb-3">CELESTE DE LA TORRE</h3>
                         <p class="text-sm/6">Asesora enfoque iglesia independiente</p>
                      </li>
 
                      <li class="rounded-2xl px-8 py-10">
-                        <img src="/media/fotos/6 - josue.png" alt=""
+                        <img src="/media/fotos/josue.png" alt=""
                            class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
                         <h3 class="mt-6 font-semibold tracking-tight mb-3">JOSUÉ LAURIÑO</h3>
                         <p class="text-sm/6">Tesorero</p>
                      </li>
 
                      <li class="rounded-2xl px-8 py-10">
-                        <img src="/media/fotos/6 - samuel.png" alt=""
+                        <img src="/media/fotos/samuel.png" alt=""
                            class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
                         <h3 class="mt-6 font-semibold tracking-tight mb-3">SAMUEL PEREIRA</h3>
                         <p class="text-sm/6">Coordinador de Alabanza y Adoración</p>
                      </li>
 
                      <li class="rounded-2xl px-8 py-10">
-                        <img src="/media/fotos/6 - bruno.png" alt=""
+                        <img src="/media/fotos/bruno.png" alt=""
                            class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
                         <h3 class="mt-6 font-semibold tracking-tight mb-3">BRUNO PADULO</h3>
                         <p class="text-sm/6">Asesor de evangelismo, misiones y media</p>
                      </li>
 
                      <li class="rounded-2xl px-8 py-10">
-                        <img src="/media/fotos/6 - jose.png" alt=""
+                        <img src="/media/fotos/jose.png" alt=""
                            class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
                         <h3 class="mt-6 font-semibold tracking-tight mb-3">JOSE LORITE</h3>
                         <p class="text-sm/6">Coordinador Staff.</p>
                      </li>
 
                      <li class="rounded-2xl px-8 py-10">
-                        <img src="/media/fotos/6 - cristina.png" alt=""
+                        <img src="/media/fotos/cristina.png" alt=""
                            class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
                         <h3 class="mt-6 font-semibold tracking-tight mb-3">CRISTINA CARRASCAL</h3>
                         <p class="text-sm/6">Asesora enfoque bautista</p>
                      </li>
 
                      <li class="rounded-2xl px-8 py-10">
-                        <img src="/media/fotos/6 - samu.png" alt=""
+                        <img src="/media/fotos/samu.png" alt=""
                            class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
                         <h3 class="mt-6 font-semibold tracking-tight mb-3">SAMUEL CASTILLEJO</h3>
                         <p class="text-sm/6">Asistente de Equipo</p>
