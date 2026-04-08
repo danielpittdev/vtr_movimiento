@@ -15,7 +15,7 @@
          </button>
       </div>
       <el-popover-group class="hidden lg:flex lg:gap-x-12">
-         <a href="#vtr" class="text-sm/6 font-semibold text-base-content">¿Qué es VTR?</a>
+         <a href="/vtr" class="text-sm/6 font-semibold text-base-content">¿Qué es VTR?</a>
          <a href="/equipo" class="text-sm/6 font-semibold text-base-content">Equipo</a>
          <a href="/conferencia" class="text-sm/6 font-semibold text-base-content">Conferencias</a>
 
@@ -31,10 +31,10 @@
             <el-popover id="desktop-menu-movimiento" anchor="bottom" popover
                class="w-48 overflow-hidden rounded-xl bg-base-100 shadow-lg outline-1 outline-gray-900/5 transition transition-discrete [--anchor-gap:--spacing(3)] backdrop:bg-transparent open:block data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in">
                <div class="py-2">
-                  <a href="#street" class="block px-5 py-3 text-sm/6 font-semibold text-base-content hover:bg-white/5">Street</a>
-                  <a href="#lideres" class="block px-5 py-3 text-sm/6 font-semibold text-base-content hover:bg-white/5">Red de líderes</a>
-                  <a href="#misiones" class="block px-5 py-3 text-sm/6 font-semibold text-base-content hover:bg-white/5">Misiones</a>
-                  <a href="#podcast" class="block px-5 py-3 text-sm/6 font-semibold text-base-content hover:bg-white/5">Podcast</a>
+                  <a href="/street" class="block px-5 py-3 text-sm/6 font-semibold text-base-content hover:bg-white/5">Street</a>
+                  <a href="/lideres" class="block px-5 py-3 text-sm/6 font-semibold text-base-content hover:bg-white/5">Red de líderes</a>
+                  <a href="/misiones" class="block px-5 py-3 text-sm/6 font-semibold text-base-content hover:bg-white/5">Misiones</a>
+                  <a href="/podcast" class="block px-5 py-3 text-sm/6 font-semibold text-base-content hover:bg-white/5">Podcast</a>
                   <a href="#devocional" class="block px-5 py-3 text-sm/6 font-semibold text-base-content hover:bg-white/5">Devocional</a>
                </div>
             </el-popover>
@@ -62,10 +62,9 @@
                <div class="mt-6 flow-root">
                   <div class="-my-6 divide-y divide-gray-500/10">
                      <div class="space-y-2 py-6">
-                        <a href="#vtr" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-base-content hover:bg-white/5">¿Qué es VTR?</a>
+                        <a href="/vtr" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-base-content hover:bg-white/5">¿Qué es VTR?</a>
                         <a href="/equipo" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-base-content hover:bg-white/5">Equipo</a>
                         <a href="/conferencia" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-base-content hover:bg-white/5">Conferencias</a>
-
                         {{-- Dropdown Movimiento móvil --}}
                         <div class="-mx-3">
                            <button type="button" command="--toggle" commandfor="movimiento-mobile" class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-base-content hover:bg-white/5">
@@ -75,10 +74,10 @@
                               </svg>
                            </button>
                            <el-disclosure id="movimiento-mobile" hidden class="mt-2 block space-y-2">
-                              <a href="#street" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-base-content hover:bg-white/5">Street</a>
-                              <a href="#lideres" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-base-content hover:bg-white/5">Red de líderes</a>
-                              <a href="#misiones" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-base-content hover:bg-white/5">Misiones</a>
-                              <a href="#podcast" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-base-content hover:bg-white/5">Podcast</a>
+                              <a href="/street" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-base-content hover:bg-white/5">Street</a>
+                              <a href="/lideres" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-base-content hover:bg-white/5">Red de líderes</a>
+                              <a href="/misiones" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-base-content hover:bg-white/5">Misiones</a>
+                              <a href="/podcast" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-base-content hover:bg-white/5">Podcast</a>
                               <a href="#devocional" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-base-content hover:bg-white/5">Devocional</a>
                            </el-disclosure>
                         </div>
@@ -90,7 +89,5 @@
             </el-dialog-panel>
          </div>
       </dialog>
-   </el-dialog>
-=======
-              
+   </el-dialog>        
 </header>
