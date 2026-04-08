@@ -26,7 +26,7 @@
                      Misiones
                   </h2>
                   <p class="mt-6 md:text-lg/8 text-xl font-light">
-                     Llevando el Evangelio donde más se necesita, formando una generación dispuesta a servir.
+                     Formando una generación dispuesta a servir.
                   </p>
                </div>
 
@@ -37,7 +37,7 @@
                      <p class="text-base/8 opacity-80">
                         En VTR creemos que el Evangelio no se queda dentro de cuatro paredes.
                         Nuestras misiones son experiencias donde jóvenes son activados para servir,
-                        predicar, amar personas y llevar el Reino de Dios a diferentes lugares.
+                        predicar, amar personas y llevar el Reino de Dios a diferentes lugares. Llevando el Evangelio donde más se necesita.
                      </p>
 
                      <p class="text-base/8 opacity-80 mt-4">

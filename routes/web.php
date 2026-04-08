@@ -24,10 +24,6 @@ Route::post('/entrqury', [ApiBase::class, 'entrada_query'])->name('post_entrada_
 Route::view('/contacto', 'contacto');
 Route::view('/equipo', 'equipo');
 
-Route::get('/equipo', function () {
-    return view('equipo');
-});
-
 Route::get('/contacto', function () {
     return view('contacto');
 });
@@ -35,3 +31,9 @@ Route::get('/contacto', function () {
 Route::get('/misiones', function () {
     return view('movimiento.misiones');
 });
+Route::get('/vtr', function () {
+    return view('vtr');
+});
+Route::get('/equipo', function () {
+    return view('equipo');
+    
