@@ -59,8 +59,9 @@
                      “Heme aquí, envíame a mí.” Isaías 6:8
                   </h3>
 
-                  <a href="TU_FORMULARIO_AQUI"
+                  <a href="https://forms.gle/fK2YuzuwWqeSJ4aa8"
                      target="_blank"
+                     rel="noopener noreferrer"
                      class="inline-block rounded-full bg-white px-10 py-4 text-lg font-semibold text-black hover:scale-105 transition">
                      INSCRIPCIÓN
                   </a>
