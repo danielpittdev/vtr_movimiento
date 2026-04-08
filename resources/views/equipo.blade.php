@@ -1,7 +1,5 @@
-@extends('general.html.blank')
-
 @section('contenido')
-<div class="bg-base-100">
+   <div class="bg-base-100">
       <main class="isolate">
          <!-- Hero section -->
          <div class="relative pt-14">
@@ -17,84 +15,87 @@
                   controls
                   class="absolute scale-[4] top-0 w-full h-full"></video>
             </div>
-<div class="min-h-screen px-6 pt-50 pb-28 text-white text-center">
 
-    <h1 class="text-5xl font-bold mb-6 tracking-wide">
-        
-    </h1>
-<div class="text-center mb-16">
-    <h1 class="text-5xl font-bold mt-20 mb-6">Equipo</h1>
-    </p>
-</div>
-    <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
+            <div class="py-24 sm:py-32">
+               <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
+                  <div class="mx-auto max-w-2xl">
+                     <h2 class="md:text-7xl text-5xl font-semibold tracking-tight text-balance">EQUIPO VTR</h2>
+                  </div>
+                  <ul role="list"
+                     class="mx-auto mt-20 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
+                     <li class="rounded-2xl px-8 py-10">
+                        <img src="/media/fotos/6 - jorge.png" alt=""
+                           class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
+                        <h3 class="mt-6 font-semibold tracking-tight mb-3">JORGE FELIZ</h3>
+                        <p class="text-sm/6">Coordinador y fundador</p>
+                     </li>
 
-        {{-- Persona --}}
-        <div class="group transition transform hover:scale-105">
-            <div class="text-center">
-                <img src="/media/fotos/persona1.png" class="w-21 h-21 max-w-[80px] max-h-[80px] mx-auto rounded-full object-cover mb-4">
+                     <li class="rounded-2xl px-8 py-10">
+                        <img src="/media/fotos/6 - celeste.png" alt=""
+                           class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
+                        <h3 class="mt-6 font-semibold tracking-tight mb-3">CELESTE DE LA TORRE</h3>
+                        <p class="text-sm/6">Asesora enfoque iglesia independiente</p>
+                     </li>
+
+                     <li class="rounded-2xl px-8 py-10">
+                        <img src="/media/fotos/6 - josue.png" alt=""
+                           class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
+                        <h3 class="mt-6 font-semibold tracking-tight mb-3">JOSUÉ LAURIÑO</h3>
+                        <p class="text-sm/6">Tesorero</p>
+                     </li>
+
+                     <li class="rounded-2xl px-8 py-10">
+                        <img src="/media/fotos/6 - samuel.png" alt=""
+                           class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
+                        <h3 class="mt-6 font-semibold tracking-tight mb-3">SAMUEL PEREIRA</h3>
+                        <p class="text-sm/6">Coordinador de Alabanza y Adoración</p>
+                     </li>
+
+                     <li class="rounded-2xl px-8 py-10">
+                        <img src="/media/fotos/6 - bruno.png" alt=""
+                           class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
+                        <h3 class="mt-6 font-semibold tracking-tight mb-3">BRUNO PADULO</h3>
+                        <p class="text-sm/6">Asesor de evangelismo, misiones y media</p>
+                     </li>
+
+                     <li class="rounded-2xl px-8 py-10">
+                        <img src="/media/fotos/6 - jose.png" alt=""
+                           class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
+                        <h3 class="mt-6 font-semibold tracking-tight mb-3">JOSE LORITE</h3>
+                        <p class="text-sm/6">Coordinador Staff.</p>
+                     </li>
+
+                     <li class="rounded-2xl px-8 py-10">
+                        <img src="/media/fotos/6 - cristina.png" alt=""
+                           class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
+                        <h3 class="mt-6 font-semibold tracking-tight mb-3">CRISTINA CARRASCAL</h3>
+                        <p class="text-sm/6">Asesora enfoque bautista</p>
+                     </li>
+
+                     <li class="rounded-2xl px-8 py-10">
+                        <img src="/media/fotos/6 - samu.png" alt=""
+                           class="mx-auto w-50 rounded-full outline-1 -outline-offset-1 outline-black/5" />
+                        <h3 class="mt-6 font-semibold tracking-tight mb-3">SAMUEL CASTILLEJO</h3>
+                        <p class="text-sm/6">Asistente de Equipo</p>
+                     </li>
+
+                     
+
+                  </ul>
+               </div>
             </div>
-            <h3 class="text-xl font-bold mt-4">Jorge Feliz</h3>
-            <p class="text-sm opacity-70 mt-2">Coordinador y fundador</p>
-        </div>
+         </div>
+      </main>
 
-        <div class="group transition transform hover:scale-105">
-            <div class="text-center">
-                <img src="/media/fotos/persona2.png" class="w-21 h-21 max-w-[80px] max-h-[80px] mx-auto rounded-full object-cover mb-4">
-            </div>
-            <h3 class="text-xl font-bold mt-4">Celeste de la Torre</h3>
-            <p class="text-sm opacity-70 mt-2">Asesora enfoque iglesia independiente</p>
-        </div>
+      <!-- Footer -->
+      <footer class="relative mx-auto mt-0 max-w-7xl px-6 lg:px-8 space-y-7 pb-15">
+         <div class="capa text-center">
+            <h6>VTR Venga tu Reino - Todos los derechos reservados {{ Carbon\Carbon::now()->translatedFormat('Y') }} ©</h6>
+         </div>
 
-        <div class="group transition transform hover:scale-105">
-            <div class="text-center">
-                <img src="/media/fotos/persona3.png" class="w-21 h-21 max-w-[80px] max-h-[80px] mx-auto rounded-full object-cover mb-4">
-            </div>
-            <h3 class="text-xl font-bold mt-4">Samuel Pereira</h3>
-            <p class="text-sm opacity-70 mt-2">Coordinador de Alabanza y Adoración</p>
-        </div>
-
-        <div class="group transition transform hover:scale-105">
-            <div class="text-center">
-                <img src="/media/fotos/persona4.png" class="w-21 h-21 max-w-[80px] max-h-[80px] mx-auto rounded-full object-cover mb-4">
-            </div>
-            <h3 class="text-xl font-bold mt-4">Bruno Padulo</h3>
-            <p class="text-sm opacity-70 mt-2">Asesor de evangelismo, misiones y media</p>
-        </div>
-
-        <div class="group transition transform hover:scale-105">
-            <div class="text-center">
-                <img src="/media/fotos/persona5.png" class="w-21 h-21 max-w-[80px] max-h-[80px] mx-auto rounded-full object-cover mb-4">
-            </div>
-            <h3 class="text-xl font-bold mt-4">Josue Lauriño</h3>
-            <p class="text-sm opacity-70 mt-2">Tesorero</p>
-        </div>
-
-        <div class="group transition transform hover:scale-105">
-            <div class="text-center">
-                <img src="/media/fotos/persona6.png" class="w-21 h-21 max-w-[80px] max-h-[80px] mx-auto rounded-full object-cover mb-4">
-            </div>
-            <h3 class="text-xl font-bold mt-4">Jose Lorite</h3>
-            <p class="text-sm opacity-70 mt-2">Coordinador Staff</p>
-        </div>
-
-        <div class="group transition transform hover:scale-105">
-            <div class="text-center">
-                <img src="/media/fotos/persona7.png" class="w-21 h-21 max-w-[80px] max-h-[80px] mx-auto rounded-full object-cover mb-4">
-            </div>
-            <h3 class="text-xl font-bold mt-4">Samuel Castillejo</h3>
-            <p class="text-sm opacity-70 mt-2">Asistente de Equipo</p>
-        </div>
-
-        <div class="group transition transform hover:scale-105">
-            <div class="text-center">
-                <img src="/media/fotos/persona8.png" class="w-21 h-21 max-w-[80px] max-h-[80px] mx-auto rounded-full object-cover mb-4">
-            </div>
-            <h3 class="text-xl font-bold mt-4">Cristina Carrascal</h3>
-            <p class="text-sm opacity-70 mt-2">Asesora enfoque bautista</p>
-        </div>
-
-    </div>
-
-</div>
-
+         <div class="capa text-center">
+            <small>Diseño Jose Lorite - Desarrollo Daniel González</small>
+         </div>
+      </footer>
+   </div>
 @endsection
