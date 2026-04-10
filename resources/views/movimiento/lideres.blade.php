@@ -26,18 +26,19 @@
                      RETIRO LÍDERES
                   </h2>
                   <p class="mt-6 md:text-lg/8 text-xl font-light">
-                     Tiempo de formación, oasis y conexión.
+                     Del 22 al 23 de mayo
                   </p>
                </div>
 
                {{-- Texto + Foto --}}
                <div class="mx-auto mt-20 grid max-w-6xl grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                   <div>
-                     <h3 class="text-3xl font-semibold mb-6">Esto no es un viaje, es una misión.</h3>
+                     <h3 class="text-3xl font-semibold mb-6">Tiempo de formación, oasis y conexión.</h3>
                      <p class="text-base/8 opacity-80">
                         Viernes 22 y sábado 23 de mayo son las próximas fechas de nuestro retiro de líderes VTR. Será en Asociación Real, una finca en Antequera (Málaga)
                         Líderes de jóvenes y de adolescentes de diferentes iglesias, juntos, formándonos, aprendiendo, adorando juntos y orando unos por otros. Un Tiempo
                         necesario para recargar pilas.
+                        "Cuiden del rebaño que Dios les ha encomendado. Háganlo con gusto, no de mala gana ni por el beneficio personal que puedan obtener de ello, sino porque están deseosos de servir a Dios." 1Pedro 5:2
                      </p>
 
                      <p class="text-base/8 opacity-80 mt-4">
@@ -53,11 +54,6 @@
                </div>
 
                {{-- CTA --}}
-               <div class="text-center mt-20">
-                  <h3 class="text-3xl font-semibold mb-6">
-                     "Cuiden del rebaño que Dios les ha encomendado. Háganlo con gusto, no de mala gana ni por el beneficio personal que puedan obtener de ello, sino porque están deseosos de servir a Dios." 1Pedro 5:2
-                  </h3>
-
                   <a href="https://forms.gle/MHmRqKbsQiRJqP1X7"
                      target="_blank"
                      rel="noopener noreferrer"
