@@ -58,7 +58,7 @@
                      "Cuiden del rebaño que Dios les ha encomendado. Háganlo con gusto, no de mala gana ni por el beneficio personal que puedan obtener de ello, sino porque están deseosos de servir a Dios." 1Pedro 5:2
                   </h3>
 
-                  <a href="https://forms.gle/fK2YuzuwWqeSJ4aa8"
+                  <a href="https://forms.gle/MHmRqKbsQiRJqP1X7"
                      target="_blank"
                      rel="noopener noreferrer"
                      class="inline-block rounded-full bg-white px-10 py-4 text-lg font-semibold text-black hover:scale-105 transition">
