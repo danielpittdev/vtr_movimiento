@@ -37,3 +37,7 @@ Route::get('/vtr', function () {
 Route::get('/equipo', function () {
     return view('equipo');
 });
+Route::get('/lideres', function () {
+    return view('lideres');
+});
+
