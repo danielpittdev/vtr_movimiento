@@ -38,7 +38,7 @@
                         Viernes 22 y sábado 23 de mayo son las próximas fechas de nuestro retiro de líderes VTR. Será en Asociación Real, una finca en Antequera (Málaga)
                         Líderes de jóvenes y de adolescentes de diferentes iglesias, juntos, formándonos, aprendiendo, adorando juntos y orando unos por otros. Un Tiempo
                         necesario para recargar pilas.
-                        "Cuiden del rebaño que Dios les ha encomendado. Háganlo con gusto, no de mala gana ni por el beneficio personal que puedan obtener de ello, sino porque están deseosos de servir a Dios." 1Pedro 5:2
+                        
                      </p>
 
                      <p class="text-base/8 opacity-80 mt-4">
@@ -54,6 +54,11 @@
                </div>
 
                {{-- CTA --}}
+               <div class="text-center mt-20">
+                  <h3 class="text-3xl font-semibold mb-6">
+                     "Cuiden del rebaño que Dios les ha encomendado. Háganlo con gusto, no de mala gana ni por el beneficio personal que puedan obtener de ello, sino porque están deseosos de servir a Dios." 1Pedro 5:2
+                  </h3>
+
                   <a href="https://forms.gle/MHmRqKbsQiRJqP1X7"
                      target="_blank"
                      rel="noopener noreferrer"
