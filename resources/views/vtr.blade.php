@@ -75,11 +75,6 @@
                      <p>FRAPAM (Fraternidad de Pastores de Málaga)</p>
                   </div>
 
-                  <div class="mt-12 text-center">
-                     <p class="text-2xl font-semibold">
-                        Más de 120 pastores son aval de VTR
-                     </p>
-                  </div>
                </div>
 
             </div>

@@ -34,7 +34,13 @@
                   <a href="/street" class="block px-5 py-3 text-sm/6 font-semibold text-base-content hover:bg-white/5">Street</a>
                   <a href="/lideres" class="block px-5 py-3 text-sm/6 font-semibold text-base-content hover:bg-white/5">Red de líderes</a>
                   <a href="/misiones" class="block px-5 py-3 text-sm/6 font-semibold text-base-content hover:bg-white/5">Misiones</a>
-                  <a href="/podcast" class="block px-5 py-3 text-sm/6 font-semibold text-base-content hover:bg-white/5">Podcast</a>
+                  <a href="https://open.spotify.com/show/0U7704lj0Qxx93BxAiGVoP?si=e0d05bd2b58e49e8"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="block px-5 py-3 text-sm/6 font-semibold text-base-content hover:bg-white/5">
+   Podcast
+</a>
+
                   <a href="/devocional" class="block px-5 py-3 text-sm/6 font-semibold text-base-content hover:bg-white/5">Devocional</a>
                </div>
             </el-popover>
@@ -77,7 +83,13 @@
                               <a href="/street" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-base-content hover:bg-white/5">Street</a>
                               <a href="/lideres" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-base-content hover:bg-white/5">Red de líderes</a>
                               <a href="/misiones" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-base-content hover:bg-white/5">Misiones</a>
-                              <a href="/podcast" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-base-content hover:bg-white/5">Podcast</a>
+                              <a href="https://open.spotify.com/show/0U7704lj0Qxx93BxAiGVoP?si=e0d05bd2b58e49e8"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="block px-5 py-3 text-sm/6 font-semibold text-base-content hover:bg-white/5">
+   Podcast
+</a>
+
                               <a href="/devocional" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-base-content hover:bg-white/5">Devocional</a>
                            </el-disclosure>
                         </div>
