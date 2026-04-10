@@ -80,7 +80,7 @@
                         <p class="text-sm/6">Asistente de Equipo</p>
                      </li>
 
-                     
+
 
                   </ul>
                </div>
