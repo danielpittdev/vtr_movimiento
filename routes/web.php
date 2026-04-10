@@ -38,6 +38,6 @@ Route::get('/equipo', function () {
     return view('equipo');
 });
 Route::get('/lideres', function () {
-    return view('lideres');
+    return view('movimiento.lideres');
 });
 
