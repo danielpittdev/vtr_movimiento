@@ -35,7 +35,7 @@
                   <div>
                      <h3 class="text-3xl font-semibold mb-6">Llevar el mensaje de Jesús a toda Almería</h3>
                      <p class="text-base/8 opacity-80">
-                        Tres días en pleno verano, cientos de jovenes evangelizando la ciudad de Almería AL MISMO TIEMPO. Formación, adoración, evangelismo, comunión... Dios va a hacer grandes cosas esos dísa en esa ciudad. ¡ALMERÍA ES PARA CRISTO!
+                        Tres días en pleno verano, cientos de jovenes evangelizando la ciudad de Almería AL MISMO TIEMPO. Formación, adoración, evangelismo, comunión... Dios va a hacer grandes cosas esos días en esa ciudad. ¡ALMERÍA ES PARA CRISTO!
                         
                      </p>
 
