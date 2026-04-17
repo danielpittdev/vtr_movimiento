@@ -40,4 +40,6 @@ Route::get('/equipo', function () {
 Route::get('/lideres', function () {
     return view('movimiento.lideres');
 });
-
+Route::get('/street', function () {
+    return view('movimiento.street');
+});
