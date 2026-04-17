@@ -14,6 +14,13 @@
     <main>
         @yield('content')
     </main>
+<meta property="og:title" content="VTR - Venga Tu Reino">
+<meta property="og:description" content="Soñemos con lo que Dios quiere hacer en España con nuestra generación">
+<meta property="og:image" content="https://vtrmovimiento.com/media/fotos/portada.jpg">
+<meta property="og:url" content="https://vtrmovimiento.com">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
 
 </body>
 </html>
