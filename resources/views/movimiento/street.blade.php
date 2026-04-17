@@ -33,7 +33,7 @@
                {{-- Texto + Foto --}}
                <div class="mx-auto mt-20 grid max-w-6xl grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                   <div>
-                     <h3 class="text-3xl font-semibold mb-6">Tiempo de formación, oasis y conexión.</h3>
+                     <h3 class="text-3xl font-semibold mb-6">Llevar el mensaje de Jesús a toda Almería</h3>
                      <p class="text-base/8 opacity-80">
                         Tres días en pleno verano, cientos de jovenes evangelizando la ciudad de Almería AL MISMO TIEMPO. Formación, adoración, evangelismo, comunión... Dios va a hacer grandes cosas esos dísa en esa ciudad. ¡ALMERÍA ES PARA CRISTO!
                         
