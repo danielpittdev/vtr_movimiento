@@ -1,65 +1,55 @@
-@extends('general.html.blank')
+@extends('layouts.app')
 
-@section('contenido')
-   {{-- Fondo fijo --}}
-   <div class="fixed inset-0 z-0">
-      <img class="w-full h-full object-cover" src="/media/vtr2026/fondo_vtr.png" alt="Fondo VTR">
-   </div>
+@section('title', 'Conferencia - VTR')
 
-   {{-- Contenido principal --}}
-   <div class="relative z-10 min-h-screen flex flex-col items-center pt-24 sm:pt-28 pb-28 sm:pb-20 px-4 sm:px-6 overflow-x-hidden">
+@section('og_image', 'https://vtrmovimiento.com/media/fotos/conferencia1.jpeg')
 
-      {{-- Sección Hero --}}
-      <div class="w-full max-w-5xl mx-auto flex flex-col items-center gap-4 sm:gap-6 lg:gap-8 pb-20">
+@section('content')
 
-         {{-- Bloque central: Cartel de invitados con elementos decorativos --}}
-         <div class="relative w-full flex items-center justify-center">
+<div class="max-w-5xl mx-auto px-4 py-16 text-center">
 
-            {{-- Cartel invitados (centro) --}}
-            <div data-aos="zoom-in" data-aos-duration="1000" class="relative z-10">
-               <img class="w-full max-w-[280px] sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl drop-shadow-2xl"
-                  src="/media/vtr2026/invitados_TEMP.png" alt="Invitados">
-            </div>
+    <h1 class="text-3xl md:text-5xl font-bold mb-6">
+        VTR Conferencia
+    </h1>
 
-            {{-- Venga Tu Reino texto: lado derecho --}}
-            <div data-aos="fade-left" data-aos-duration="900" data-aos-delay="500"
-               class="hidden sm:block absolute -right-2 md:right-4 lg:right-8 top-1/2 -translate-y-1/2 z-20">
-               <img class="w-14 md:w-22 lg:w-28 opacity-70"
-                  src="/media/vtr2026/vengatureino.png" alt="Venga Tu Reino">
-            </div>
-         </div>
+    <p class="text-lg md:text-xl text-gray-600 mb-10">
+        <strong>18 de abril.</strong><br><br>
 
-         {{-- Fecha y lugar --}}
-         <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="mt-2 sm:mt-4">
-            <img class="w-52 sm:w-60 md:w-72 lg:w-120 drop-shadow-xl"
-               src="/media/vtr2026/fechalugar.png" alt="18 Abril - CEFC Córdoba">
-         </div>
+        Más de 1500 jóvenes reunidos con un mismo latido.<br><br>
 
-         {{-- Botón CTA --}}
-         <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="600"
-     class="mt-2 sm:mt-4 flex gap-4 flex-wrap justify-center">
+        No fue solo una conferencia.<br>
+        Fue un encuentro real con Dios.<br><br>
 
-   <a href="https://rezerva.es/e/dad32e5c-15ae-4b13-885b-75157c07f7e9"
-      class="btn btn-lg bg-white hover:bg-gray-50 text-black border-none rounded-full px-8 sm:px-10 text-base sm:text-lg font-bold shadow-xl shadow-white/10 transition-transform hover:scale-105">
-      Reserva tu plaza
-   </a>
+        Voces como Iván Martínez, Itiel Arroyo, Gustavo Paiva, Rubén Gimeno y Rawlinson nos recordaron algo claro:<br>
+        Dios sigue llamando a esta generación.<br><br>
 
-   <a href="/invitados"
-      class="btn btn-lg btn-outline text-white border-white rounded-full px-8 sm:px-10 text-base sm:text-lg font-bold transition-transform hover:scale-105">
-      Invitados
-   </a>
+        Y lo que vivimos allí… no se queda en un día.<br>
+        Esto solo acaba de empezar.
+    </p>
+
+    <!-- IMÁGENES -->
+    <div class="grid md:grid-cols-2 gap-6 mb-12">
+        <img src="/media/fotos/conferencia1.jpeg" class="rounded-2xl shadow-lg w-full h-[300px] object-cover">
+        <img src="/media/fotos/conferencia2.jpeg" class="rounded-2xl shadow-lg w-full h-[300px] object-cover">
+    </div>
+
+    <!-- BOTONES -->
+    <div class="flex flex-col md:flex-row justify-center gap-4">
+
+        <!-- BOTÓN FOTOS -->
+        <a href="https://web.upyourshoot.com/es/g/269964-vtr-2026" target="_blank"
+           class="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition">
+            Ver fotos
+        </a>
+
+        <!-- BOTÓN INSTAGRAM -->
+        <a href="https://www.instagram.com/vtrmovimiento/" target="_blank"
+           class="inline-block border border-black text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-black hover:text-white transition">
+            @vtrmovimiento
+        </a>
+
+    </div>
 
 </div>
 
-      </div>
-
-      {{-- Patrocinadores --}}
-      <div class="fixed bottom-0 left-0 w-full z-50 pb-10 sm:pb-10 pt-10 bg-gradient-to-t from-black/50 to-transparent pointer-events-none">
-         <div class="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 opacity-90 pointer-events-auto">
-            <img class="h-8 lg:h-12 drop-shadow-md" src="/media/vtr2026/logo_CEAA.png" alt="CEAA">
-            <img class="h-8 lg:h-12 drop-shadow-md" src="/media/vtr2026/logo_IMEDEC.png" alt="IMEDEC">
-            <img class="h-8 lg:h-12 drop-shadow-md" src="/media/vtr2026/logo_aytocordoba.png" alt="Ayto Córdoba">
-         </div>
-      </div>
-   </div>
 @endsection
