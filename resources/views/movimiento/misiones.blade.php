@@ -79,7 +79,7 @@
          </div>
 
          <div class="capa text-center">
-            <small>Diseño Sara Orjuela - Desarrollo Daniel González</small>
+            <small>Diseño Jose Lorite - Desarrollo Daniel González</small>
          </div>
       </footer>
    </div>
