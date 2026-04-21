@@ -1,55 +1,71 @@
-@extends('layouts.app')
+@extends('general.html.blank')
 
-@section('title', 'Conferencia - VTR')
+@section('contenido')
 
-@section('og_image', 'https://vtrmovimiento.com/media/fotos/conferencia1.jpeg')
+<div class="bg-base-100">
+    <main class="isolate">
+        <div class="relative pt-14">
 
-@section('content')
+            <!-- FONDO IGUAL QUE OTRAS PÁGINAS -->
+            <div aria-hidden="true"
+                class="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl fixed top-0 h-full">
 
-<div class="max-w-5xl mx-auto px-4 py-16 text-center">
+                <div
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+                    class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75">
+                </div>
 
-    <h1 class="text-3xl md:text-5xl font-bold mb-6">
-        VTR Conferencia
-    </h1>
+                <video src="/media/videos/back3.mp4" loop autoplay muted playsinline
+                    class="absolute scale-[4] top-0 w-full h-full object-cover"></video>
+            </div>
 
-    <p class="text-lg md:text-xl text-gray-600 mb-10">
-        <strong>18 de abril.</strong><br><br>
+            <div class="py-24 sm:py-32">
+                <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
 
-        Más de 1500 jóvenes reunidos con un mismo latido.<br><br>
+                    <h1 class="text-4xl md:text-6xl font-semibold mb-8">
+                        VTR Conferencia
+                    </h1>
 
-        No fue solo una conferencia.<br>
-        Fue un encuentro real con Dios.<br><br>
+                    <p class="text-lg md:text-xl opacity-85 mb-16 max-w-3xl mx-auto">
+                        <strong>18 de abril.</strong><br><br>
 
-        Voces como Iván Martínez, Itiel Arroyo, Gustavo Paiva, Rubén Gimeno y Rawlinson nos recordaron algo claro:<br>
-        Dios sigue llamando a esta generación.<br><br>
+                        Más de 1500 jóvenes reunidos con un mismo latido.<br><br>
 
-        Y lo que vivimos allí… no se queda en un día.<br>
-        Esto solo acaba de empezar.
-    </p>
+                        No fue solo una conferencia.<br>
+                        Fue un encuentro real con Dios.<br><br>
 
-    <!-- IMÁGENES -->
-    <div class="grid md:grid-cols-2 gap-6 mb-12">
-        <img src="/media/fotos/conferencia1.jpeg" class="rounded-2xl shadow-lg w-full h-[300px] object-cover">
-        <img src="/media/fotos/conferencia2.jpeg" class="rounded-2xl shadow-lg w-full h-[300px] object-cover">
-    </div>
+                        Voces como Iván Martínez, Itiel Arroyo, Gustavo Paiva, Rubén Gimeno y Rawlinson nos recordaron algo claro:<br>
+                        Dios sigue llamando a esta generación.<br><br>
 
-    <!-- BOTONES -->
-    <div class="flex flex-col md:flex-row justify-center gap-4">
+                        Y lo que vivimos allí… no se queda en un día.<br>
+                        Esto solo acaba de empezar.
+                    </p>
 
-        <!-- BOTÓN FOTOS -->
-        <a href="https://web.upyourshoot.com/es/g/269964-vtr-2026" target="_blank"
-           class="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition">
-            Ver fotos
-        </a>
+                    <!-- IMÁGENES -->
+                    <div class="grid md:grid-cols-2 gap-8 mb-16">
+                        <img src="/media/fotos/conferencia1.jpeg" class="rounded-2xl w-full h-[350px] object-cover">
+                        <img src="/media/fotos/conferencia2.jpeg" class="rounded-2xl w-full h-[350px] object-cover">
+                    </div>
 
-        <!-- BOTÓN INSTAGRAM -->
-        <a href="https://www.instagram.com/vtrmovimiento/" target="_blank"
-           class="inline-block border border-black text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-black hover:text-white transition">
-            @vtrmovimiento
-        </a>
+                    <!-- BOTONES -->
+                    <div class="flex flex-col md:flex-row justify-center gap-4">
 
-    </div>
+                        <a href="https://web.upyourshoot.com/es/g/269964-vtr-2026" target="_blank"
+                           class="bg-white text-black px-8 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition">
+                            Ver fotos
+                        </a>
 
+                        <a href="https://www.instagram.com/vtrmovimiento/" target="_blank"
+                           class="border border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-black transition">
+                            @vtrmovimiento
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
 </div>
 
 @endsection
